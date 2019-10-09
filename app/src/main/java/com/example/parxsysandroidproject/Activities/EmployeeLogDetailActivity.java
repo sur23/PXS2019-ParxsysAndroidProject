@@ -290,7 +290,7 @@ public class EmployeeLogDetailActivity extends AppCompatActivity {
         int total_days_present=map.size();
         int total_present=Integer.parseInt(date)-holiday;
         int total_absent=total_present-total_days_present;
-        hr_show.setText(String.valueOf(totalhrsum));
+        hr_show.setText(String.format("%.2f",totalhrsum));
         present_show.setText(String.valueOf(total_days_present));
         absent_show.setText(String.valueOf(total_absent));
         AppLog.Log(TAG, "------>totalhrsum :" + totalhrsum +"\n total_days_present:"+total_present+"\n total_absent:"+total_absent);
