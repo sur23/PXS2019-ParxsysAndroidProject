@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/recycle_bg"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/date_show"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/ColorBlack"
+            android:text="1"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/hr_show"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/ColorBlack"
+            android:text="2"/>
+    </LinearLayout>
+</LinearLayout>

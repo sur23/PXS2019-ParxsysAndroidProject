@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ParxsysAndroidProject</string>
+    <string name="no_internet">Internet connection not available.Please check your data connectivity or try again in some time.</string>
+</resources>

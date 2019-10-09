@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorsWhite"
+    tools:context=".Activities.EmployeeListActivity">
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Employee Attendance App"
+            android:textColor="@color/ColorsWhite"
+            android:id="@+id/toolbar_title" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/dropdown_bg"
+        android:layout_marginTop="100dp"
+        android:layout_height="50dp">
+        <Spinner
+            android:id="@+id/emp_list_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:overlapAnchor="false"
+            android:dropDownVerticalOffset="5dp"
+            android:background="@color/ColorsWhite"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_required"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:paddingTop="3dp"
+                android:src="@mipmap/red_cancel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="Required"
+                android:textSize="13sp"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="100dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:background="@drawable/dropdown_bg"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="10dp"
+                android:layout_height="50dp">
+                <Spinner
+                    android:id="@+id/date_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:overlapAnchor="false"
+                    android:dropDownVerticalOffset="5dp"
+                    android:background="@color/ColorsWhite"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/dropdown_bg"
+                android:layout_height="50dp">
+                <Spinner
+                    android:id="@+id/year_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:overlapAnchor="false"
+                    android:dropDownVerticalOffset="5dp"
+                    android:background="@color/ColorsWhite"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/attendance_report_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:textSize="14sp"
+            android:text="View Attendance Report"
+            android:textColor="@color/ColorsWhite"
+            android:background="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/colorAccent"
+            android:theme="@style/CircularProgress"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>
